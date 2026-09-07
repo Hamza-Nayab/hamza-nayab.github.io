@@ -62,7 +62,7 @@ All site contents (education, research manuscripts, benchmarks, datasets, engine
    - **Branch**: Select `main` and folder `/ (root)`.
    - Click **Save**.
 4. GitHub Pages will deploy your site in ~1 minute at:
-   `https://hamza-nayab.github.io/Hamzanayab/`
+   `https://hamza-nayab.github.io/`
 
 ---
 

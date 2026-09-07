@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://hamza-nayab.github.io/Hamzanayab/sitemap.xml
+Sitemap: https://hamza-nayab.github.io/sitemap.xml

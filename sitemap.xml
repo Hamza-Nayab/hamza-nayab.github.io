@@ -1,33 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://hamza-nayab.github.io/Hamzanayab/</loc>
+    <loc>https://hamza-nayab.github.io/</loc>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://hamza-nayab.github.io/Hamzanayab/research.html</loc>
+    <loc>https://hamza-nayab.github.io/research.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://hamza-nayab.github.io/Hamzanayab/projects.html</loc>
+    <loc>https://hamza-nayab.github.io/projects.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://hamza-nayab.github.io/Hamzanayab/experience.html</loc>
+    <loc>https://hamza-nayab.github.io/experience.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://hamza-nayab.github.io/Hamzanayab/cv.html</loc>
+    <loc>https://hamza-nayab.github.io/cv.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://hamza-nayab.github.io/Hamzanayab/contact.html</loc>
-    <changefreq>monthly</changefreq>
+    <loc>https://hamza-nayab.github.io/contact.html</loc>
+    <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
 </urlset>
