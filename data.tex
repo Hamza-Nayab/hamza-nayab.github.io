@@ -1,0 +1,299 @@
+%-------------------------
+% Master CV — Comprehensive Portfolio Version
+% Based on "Jake's Resume" template structure
+%-------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{amsmath}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins to maximize page usage
+\addtolength{\oddsidemargin}{-0.55in}
+\addtolength{\evensidemargin}{-0.55in}
+\addtolength{\textwidth}{1.1in}
+\addtolength{\topmargin}{-.75in}
+\addtolength{\textheight}{1.6in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
+
+% ATS-friendly / machine readable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-6pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabularx}{0.97\textwidth}{X r}
+      \small#1 & \small #2 \\
+    \end{tabularx}\vspace{-6pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.18in, itemsep=1pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Malik Mir Hamza Nayab} \\ \vspace{4pt}
+    \small Dubai, UAE $|$ +971 55 724 6461 $|$ \href{mailto:Hamza.nayab48@gmail.com}{Hamza.nayab48@gmail.com} $|$
+    \href{https://github.com/Hamza-Nayab}{github.com/Hamza-Nayab} $|$
+    \href{https://www.middelmen.com}{middelmen.com} \\ \vspace{2pt}
+    \small \textit{Researcher / ML \& NLP \& DSA Engineering Roles}
+\end{center}
+\vspace{-10pt}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {COMSATS University Islamabad, Abbottabad Campus}{Abbottabad, Pakistan}
+      {Bachelor of Science, Computer Science --- CGPA 3.72/4.0}{Graduated, Spring 2026}
+    \resumeItemListStart
+      \resumeItem{Thesis: Multilingual mental-health chatbot utilizing Retrieval-Augmented Generation (RAG) and custom bilingual (English / Roman Urdu) NLP datasets. Advised by Ms. Ghanwa Batool (ghanwa@cuiatd.edu.pk, Google Scholar).}
+      \resumeItem{Advanced Coursework: Data Structures \& Algorithms, Operating Systems, Parallel \& Distributed Computing, Statistics, Machine Learning, HCI, Website Development, Database Management Systems, Compiler Construction.}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Harvard University (Online)}{}
+      {CS50 Bootcamp}{2023}
+    \resumeItemListStart
+      \resumeItem{Completed 10 intensive problem sets, 9 labs, and 1 full-stack final project.}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Edwardes College Peshawar}{Peshawar, Pakistan}
+      {Salutatorian}{2020}
+    \resumeItemListStart
+      \resumeItem{Pioneer \& Coordinator, STEM Society; Student Expo Ambassador; Student Welfare Member.}
+    \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------RESEARCH EXPERIENCE-----------
+\section{Research Experience}
+    \resumeSubHeadingListStart
+
+      \resumeProjectHeading
+          {\textbf{LadderSort: Adaptive Stable Sorting for Partially Ordered Data} $|$ \emph{First Author, Advised by Dr. Osman Khalid --- Manuscript Submitted, Under Review}}{}
+        \resumeItemListStart
+          \resumeItem{Engineered a novel deterministic, comparison-based sorting algorithm in C++ that dynamically adapts to $K$, the minimum number of nondecreasing subsequences, formally proving algorithmic optimality where $K = \mathrm{LDS}(A)$.}
+          \resumeItem{Designed a robust two-phase architecture: a stateful, hinted greedy decomposition utilizing exponential galloping, followed by a dynamically selected $K$-way loser-tree tournament or two-way galloping merge strategy.}
+          \resumeItem{Benchmarked against \texttt{std::sort} and TimSort on Apple M1 architectures handling datasets up to 100M elements; achieved up to $1.45\times$ wall-clock speedups on real-world GitHub Archive event streams ($N=55K, K=368$) and consistent 30--50\% performance gains on synthetic interleaved stream workloads.}
+        \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Cross-Dialect Robustness of Arabic PLMs for Sentiment Analysis} $|$ \emph{First Author, Submitted to FIT Conference Islamabad}}{}
+        \resumeItemListStart
+          \resumeItem{Architected a comprehensive multi-dialect evaluation framework ($n=5,207$ tweets via ArSarcasm corpus) benchmarking AraBERT, MARBERT, and CAMeL-BERT across 5 distinct regional varieties (Egyptian, Gulf, Levantine, Maghrebi, MSA).}
+          \resumeItem{Formulated the variance-based Dialect Robustness Index (DRI) to quantify structural resilience; validated empirical findings using 1,000-resample bootstrap confidence intervals and instance-level paired McNemar tests ($p<0.001$).}
+          \resumeItem{Identified and resolved a critical pipeline memory artifact in zero-shot checkpoint configurations, proving empirically that fine-tuned task adaptation significantly supersedes frozen-representation separability in PLMs.}
+        \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Roman Urdu Emotion Classification Benchmark (GoEmotions)} $|$ \emph{First Author --- Manuscript in Preparation}}{}
+        \resumeItemListStart
+          \resumeItem{Benchmarked three multilingual transformer encoders (XLM-R, mBERT, MuRIL) across 54 controlled training runs on 28-class Roman Urdu emotion classification, sweeping preprocessing regime (OFF/ON), spelling-variant augmentation ($k \in \{0,1,3\}$), and epochs (2--4) under frozen, leakage-free splits.}
+          \resumeItem{Achieved the best fine-grained result of Macro-F1 = 0.2869 (XLM-R, ON, $k{=}3$); ran a size-controlled ablation isolating the contribution of orthographic variant exposure from raw training-data volume.}
+          \resumeItem{Standardized zero-shot baselines by mapping the GoEmotions taxonomy to Ekman-6, attaining 70.31\% accuracy (Macro-F1 = 0.5004) with XLM-R, while generating publication-grade analytical artifacts (confusion matrices, per-class reports, run logs).}
+        \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Large-Scale Dataset Creation --- Roman Urdu GoEmotions}}{Zenodo DOI: 10.5281/zenodo.18445910}
+        \resumeItemListStart
+          \resumeItem{Engineered a highly fault-tolerant English $\rightarrow$ Roman Urdu translation pipeline leveraging Ollama Gemma-3 (4.3B parameter LLM) to construct the largest public Roman Urdu emotion dataset (54,263 samples) tailored for low-resource NLP research.}
+          \resumeItem{Developed a resumable, chunked-processing backend (100-row batch execution) enforcing strict emotion-preserving constraints, automated quality control, and anomalous audit flagging to safely operate within Kaggle/Colab transient limits.}
+        \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, JavaScript/TypeScript, C/C++, C\#, Dart, SQL} \\
+     \textbf{AI/ML \& NLP}{: PyTorch, Hugging Face Transformers, RAG Pipelines, Scikit-learn, NumPy, Pandas, CUDA C, OpenMP, TensorFlow} \\
+     \textbf{Web \& Cloud}{: React, Node.js (Express), Flask, Flutter, Vercel, Heroku, Cloudflare R2, MongoDB Atlas, PostgreSQL, SQLite} \\
+     \textbf{Data Science}{: Advanced Statistical Testing (Bootstrap intervals, McNemar Test, Welch $t$-test), Data Visualization} \\
+     \textbf{Core CS}{: Advanced Data Structures \& Algorithms, Operating Systems, Object-Oriented Programming (OOP), Database Management Systems} \\
+     \textbf{Languages Spoken}{: English (Fluent), Urdu, Hindi, Pashto}
+    }}
+ \end{itemize}
+
+%-----------PROJECTS-----------
+\section{Engineering Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{MiddelMen (TrustThread)} $|$ \emph{Full-Stack Sole Developer} $|$ \href{https://www.middelmen.com}{Live}}{React, Node.js, TypeScript, PostgreSQL}
+        \resumeItemListStart
+          \resumeItem{Architected and deployed a scalable social-commerce trust platform with a decoupled React/Vite SPA on Vercel Edge and a Node.js/Express REST API hosted on Heroku, managing end-to-end continuous integration (GitHub Actions).}
+          \resumeItem{Designed normalized relational schemas using Neon Serverless PostgreSQL and Drizzle ORM to enforce multi-role RBAC, verified seller reviews, and dispute logging; integrated Google OAuth 2.0 and bcrypt authentication.}
+          \resumeItem{Engineered a dynamic SSR crawler-detection middleware injecting Schema.org JSON-LD and OpenGraph metadata, optimizing SEO for global seller discovery; utilized Cloudflare R2 for highly available, zero-egress media storage.}
+        \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Multilingual Mental Health Chatbot} $|$ \emph{Undergraduate Thesis Project}}{Ollama Gemma-3, React, Flask, MongoDB}
+        \resumeItemListStart
+          \resumeItem{Designed and deployed an end-to-end bilingual (English / Roman Urdu) conversational system integrating Ollama Gemma-3 (1B) with advanced Retrieval-Augmented Generation (RAG) vector embeddings, featuring a React frontend, Flask backend on Modal serverless GPUs, and auxiliary Express APIs with OAuth + local authentication.}
+          \resumeItem{Trained PyTorch-based emotion-classification models achieving 86\% test accuracy (BERT on DAIR) and $\sim$90\% accuracy (XLM-RoBERTa on a proprietary Ekman-6 dataset); stored datasets and interaction logs in MongoDB Atlas.}
+        \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{GPU/CPU Object Detection Engine} $|$ \emph{Parallel Computing}}{C, CUDA C, OpenMP}
+        \resumeItemListStart
+          \resumeItem{Developed a low-level object detection system processing 24-bit BMP images via custom memory representations, grayscale transformations, and Sobel edge detection.}
+          \resumeItem{Achieved dramatic execution speedups through algorithmic parallelization, hardware-level memory optimization, and multi-threaded CPU/GPU workload distribution utilizing CUDA C and OpenMP APIs.}
+        \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%-----------ADDITIONAL PROJECTS-----------
+\section{Additional Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Written Digit Detection AI}}{Python, TensorFlow}
+        \resumeItemListStart
+          \resumeItem{Built a TensorFlow neural network for MNIST digit classification with high accuracy; preprocessed data and implemented model saving, reloading, and evaluation workflows.}
+        \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Discuss50}}{Python, Flask, SQLite3, Bootstrap}
+        \resumeItemListStart
+          \resumeItem{Developed a Flask-based web application for the CS50 bootcamp enabling students to submit weekly reviews and responses on lectures and psets; implemented user authentication, password reset, and secure data handling, with explicit prevention of SQL injection attacks.}
+        \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Dijkstra's Algorithm Visualizer}}{Java, Bootstrap}
+        \resumeItemListStart
+          \resumeItem{Developed a Java-based visualizer for Dijkstra's shortest-path algorithm with a Bootstrap interface, implementing graph traversal and interactive visual feedback for educational purposes.}
+        \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Professional Experience}
+    \resumeSubHeadingListStart
+      \resumeSubheading
+        {Monet Real Estate}{Dubai, UAE}
+        {Off-Plan Property Specialist}{2024 (10 months)}
+      \resumeItemListStart
+        \resumeItem{Conducted highly analytical market research of Dubai real-estate macroeconomic trends, predictive pricing models, and project launches to advise high-net-worth clients on optimal off-plan asset allocation.}
+        \resumeItem{Executed high-stakes negotiations between international clients, prominent real estate developers, and secondary-market sellers, cultivating long-term institutional relationships to drive repeat business and deal closures.}
+        \resumeItem{Managed a pipeline of clients using CRM tooling to track leads, follow-ups, and deal stages through to closure.}
+      \resumeItemListEnd
+
+      \resumeSubheading
+        {Alyf}{Peshawar, Pakistan}
+        {Founder, Pre-Launch Startup}{Sep 2020 -- 2021}
+      \resumeItemListStart
+        \resumeItem{Founded a pre-launch startup and led a small team to develop an MVP using Flutter.}
+        \resumeItem{Conducted market research and feasibility analysis to validate the product concept.}
+        \resumeItem{Presented the MVP and business idea to the IT Minister, gaining early exposure to pitching and stakeholder communication.}
+      \resumeItemListEnd
+
+      \resumeSubheading
+        {Enchant Marketing}{Peshawar, Pakistan}
+        {Founder \& Digital Marketing Lead}{Sep 2019 -- Sep 2020}
+      \resumeItemListStart
+        \resumeItem{Launched and scaled a specialized digital marketing agency, systematically building and managing an active network of 50+ regional bloggers, content creators, and micro-influencers.}
+        \resumeItem{Architected data-driven Instagram marketing funnels; executed a major collaborative campaign for Decipherer Bookstore that generated $\sim$200K verified audience impressions and increased direct client sales by $\sim$50\%.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------LEADERSHIP-----------
+\section{Leadership \& Community Impact}
+    \resumeSubHeadingListStart
+      \resumeSubheading
+        {Google Developer Groups on Campus (GDGoC) --- COMSATS Abbottabad}{Abbottabad, Pakistan}
+        {Interim Lead \& Co-Lead}{Fall 2025 -- Fall 2026}
+      \resumeItemListStart
+        \resumeItem{Directed advanced, multi-track technical bootcamps covering AI/ML, Web Architecture, Flutter, and Game Development; directly managed the logistics and evaluation of the university-wide Final Year Project (FYP) Competition.}
+        \resumeItem{Forged strategic B2B industry partnerships and curriculum collaborations with BASE Chain Pakistan, Systems Limited, Fiverr, and Thrive Pakistan to elevate campus technical standards.}
+        \resumeItem{Hosted high-profile industry masterclasses featuring lead ambassadors from Systems Limited and Fiverr; organized major inter-campus technical summits including COMBITS at Wah Campus and the Hazara Tech Fiesta 2025.}
+      \resumeItemListEnd
+
+      \resumeSubheading
+        {Google Developer Groups on Campus (GDGoC) --- COMSATS Abbottabad}{Abbottabad, Pakistan}
+        {Management Lead}{Spring 2024 -- Spring 2025}
+      \resumeItemListStart
+        \resumeItem{Scaled community outreach through data-driven membership drives, significantly increasing active student retention and technical participation across the Fall 2024 and Spring 2025 semesters.}
+        \resumeItem{Orchestrated DevFest Pakistan 2024 (Abbottabad Edition) bridging the gap between student developers and enterprise engineers; headed the official COMSATS delegation to the GDG Cloud DevFest 2024 at NIC Islamabad.}
+        \resumeItem{Moderated 4 parallel intensive technology bootcamps spanning 15+ hands-on sessions each; represented the campus software delegation at the highly competitive VisioSpark Startup Idea Competition pitching the TrustThread architecture.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------CERTIFICATIONS-----------
+\section{Certifications \& Affiliations}
+  \resumeItemListStart
+    \resumeItem{\textbf{Harvard CS50 Bootcamp} (2023) --- 10 problem sets, 9 labs, 1 full-stack final project.}
+    \resumeItem{\textbf{Angela Yu Web Developer Bootcamp}}
+    \resumeItem{\textbf{Google Developer Student Group (GDSC) Web Developer}}
+    \resumeItem{\textbf{Google Developer Groups on Campus} --- Co-Lead, Interim Lead, Management Lead (COMSATS Abbottabad)}
+    \resumeItem{\textbf{IEEE Marketing Team} --- Member}
+    \resumeItem{\textbf{STEM Society} --- Pioneer \& Coordinator, Edwardes College Peshawar}
+    \resumeItem{\textbf{Student Expo Ambassador} --- Edwardes College Peshawar}
+  \resumeItemListEnd
+
+%-----------HONORS-----------
+\section{Honors \& Awards}
+  \resumeItemListStart
+    \resumeItem{\textbf{Leadership Appreciation Award} --- Awarded jointly by COMSATS University Islamabad \& Google Developer Groups (2025) for exceptional contributions to regional technical education and community building.}
+    \resumeItem{\textbf{Salutatorian} --- Edwardes College, Peshawar (2020); recognized for outstanding academic performance.}
+    \resumeItem{\textbf{Athletics} --- Doubles Runner-up, Inter-University Competitive Table Tennis Championship.}
+  \resumeItemListEnd
+
+\end{document}

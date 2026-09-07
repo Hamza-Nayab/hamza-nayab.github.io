@@ -1,0 +1,66 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 4 0 R /Resources << /Font << /F1 5 0 R >> >> >>
+endobj
+4 0 obj
+<< /Length 1269 >>
+stream
+BT /F1 16 Tf 50 750 Td (Malik Mir Hamza Nayab - Curriculum Vitae) Tj ET
+BT /F1 11 Tf
+50 710 Td (Researcher / ML & NLP & DSA Engineering Roles) Tj
+-50 -710 Td
+50 688 Td (Dubai, UAE | +971 55 724 6461 | Hamza.nayab48@gmail.com) Tj
+-50 -688 Td
+50 666 Td () Tj
+-50 -666 Td
+50 644 Td (Education:) Tj
+-50 -644 Td
+50 622 Td (- COMSATS University Islamabad, Abbottabad Campus \(BS Computer Science - CGPA 3.72/4.0\)) Tj
+-50 -622 Td
+50 600 Td (- Harvard University CS50 Bootcamp \(2023\)) Tj
+-50 -600 Td
+50 578 Td (- Edwardes College Peshawar \(Salutatorian, 2020\)) Tj
+-50 -578 Td
+50 556 Td () Tj
+-50 -556 Td
+50 534 Td (Key Research:) Tj
+-50 -534 Td
+50 512 Td (- LadderSort: Adaptive Stable Sorting for Partially Ordered Data \(Under Review\)) Tj
+-50 -512 Td
+50 490 Td (- Cross-Dialect Robustness of Arabic PLMs for Sentiment Analysis) Tj
+-50 -490 Td
+50 468 Td (- Roman Urdu Emotion Classification Benchmark \(GoEmotions\)) Tj
+-50 -468 Td
+50 446 Td (- Large-Scale Dataset Creation: Roman Urdu GoEmotions \(Zenodo DOI: 10.5281/zenodo.18445910\)) Tj
+-50 -446 Td
+50 424 Td () Tj
+-50 -424 Td
+50 402 Td (Note: To update with your official LaTeX compiled PDF, compile data.tex) Tj
+-50 -402 Td
+50 380 Td (and drop the compiled PDF into: assets/cv/Hamza_Nayab_CV.pdf) Tj
+-50 -380 Td
+ET
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000241 00000 n 
+0000001562 00000 n 
+trailer
+<< /Size 6 /Root 1 0 R >>
+startxref
+1632
+%%EOF
