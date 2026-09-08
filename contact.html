@@ -11,7 +11,7 @@
   <!-- Open Graph / Social Meta -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="Contact — Malik Mir Hamza Nayab">
-  <meta property="og:description" content="Get in touch with Malik Mir Hamza Nayab for research collaboration, academic opportunities, or engineering projects.">
+  <meta property="og:description" content="Get in touch with Malik Mir Hamza Nayab for research collaborations, academic opportunities, or engineering projects.">
   <meta property="og:image" content="assets/img/pfp.jpeg">
   <meta property="og:url" content="https://hamza-nayab.github.io/contact.html">
   <meta name="twitter:card" content="summary">
@@ -22,34 +22,45 @@
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <link rel="manifest" href="site.webmanifest">
 
-  <!-- Typography -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&display=swap" rel="stylesheet">
-
+  <!-- Main Stylesheet -->
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
+  <!-- Accessible Skip Link -->
   <a href="#main-content" class="skip-link">Skip to main content</a>
 
-  <!-- Top Navigation Header -->
-  <header class="site-header">
-    <div class="header-container">
-      <a href="index.html" class="site-brand" aria-label="Malik Mir Hamza Nayab Home">
-        <span class="site-brand-monogram">HN</span>
-        <span class="site-brand-name">Malik Mir Hamza Nayab</span>
+  <!-- Owlstown Argyle Header -->
+  <header class="argyle-header">
+    <div class="argyle-header-container">
+      <a href="index.html" class="argyle-brand" aria-label="Malik Mir Hamza Nayab Home">
+        <span class="argyle-brand-monogram">HN</span>
+        <span class="argyle-brand-title">Malik Mir Hamza Nayab</span>
       </a>
 
-      <nav class="nav-desktop" aria-label="Main Navigation">
-        <a href="index.html" class="nav-link">Home</a>
-        <a href="research.html" class="nav-link">Research</a>
-        <a href="projects.html" class="nav-link">Projects</a>
-        <a href="experience.html" class="nav-link">Experience</a>
-        <a href="cv.html" class="nav-link">CV</a>
-        <a href="contact.html" class="nav-link active">Contact</a>
+      <!-- Desktop Nav Links -->
+      <nav class="argyle-nav" aria-label="Main Navigation">
+        <div class="theme-navlinks2-item">
+          <a href="index.html" class="theme-navlinks2-item-link">Home</a>
+        </div>
+        <div class="theme-navlinks2-item">
+          <a href="research.html" class="theme-navlinks2-item-link">Research</a>
+        </div>
+        <div class="theme-navlinks2-item">
+          <a href="projects.html" class="theme-navlinks2-item-link">Projects</a>
+        </div>
+        <div class="theme-navlinks2-item">
+          <a href="experience.html" class="theme-navlinks2-item-link">Experience</a>
+        </div>
+        <div class="theme-navlinks2-item">
+          <a href="cv.html" class="theme-navlinks2-item-link">CV</a>
+        </div>
+        <div class="theme-navlinks2-item is-active">
+          <a href="contact.html" class="theme-navlinks2-item-link">Contact</a>
+        </div>
       </nav>
 
-      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobileNavDrawer">
+      <!-- Mobile Menu Toggle Button -->
+      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle navigation menu" aria-expanded="false">
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18v2H3V6zm0 5h18v2H3v-2zm0 5h18v2H3v-2z"/></svg>
       </button>
     </div>
@@ -57,104 +68,166 @@
 
   <!-- Mobile Nav Drawer -->
   <nav class="mobile-nav-drawer" id="mobileNavDrawer" aria-label="Mobile Navigation">
-    <a href="index.html" class="nav-link">Home</a>
-    <a href="research.html" class="nav-link">Research</a>
-    <a href="projects.html" class="nav-link">Projects</a>
-    <a href="experience.html" class="nav-link">Experience</a>
-    <a href="cv.html" class="nav-link">CV</a>
-    <a href="contact.html" class="nav-link active">Contact</a>
+    <div class="theme-navlinks2-item">
+      <a href="index.html" class="theme-navlinks2-item-link">Home</a>
+    </div>
+    <div class="theme-navlinks2-item">
+      <a href="research.html" class="theme-navlinks2-item-link">Research</a>
+    </div>
+    <div class="theme-navlinks2-item">
+      <a href="projects.html" class="theme-navlinks2-item-link">Projects</a>
+    </div>
+    <div class="theme-navlinks2-item">
+      <a href="experience.html" class="theme-navlinks2-item-link">Experience</a>
+    </div>
+    <div class="theme-navlinks2-item">
+      <a href="cv.html" class="theme-navlinks2-item-link">CV</a>
+    </div>
+    <div class="theme-navlinks2-item is-active">
+      <a href="contact.html" class="theme-navlinks2-item-link">Contact</a>
+    </div>
   </nav>
 
-  <div class="page-wrapper">
-    <div class="layout-grid">
+  <!-- Hero Banner Strip -->
+  <div class="argyle-banner">
+    <div class="argyle-banner-pattern"></div>
+    <div class="argyle-banner-overlay"></div>
+  </div>
 
-      <!-- Sticky Profile Sidebar (Left) -->
-      <aside class="profile-sidebar" aria-label="Profile Details">
-        <div class="sidebar-avatar-wrapper">
-          <img src="assets/img/pfp.jpeg" alt="Malik Mir Hamza Nayab" class="sidebar-avatar" width="240" height="240" fetchpriority="high">
-        </div>
+  <!-- Main 2-Column Container -->
+  <div class="argyle-main">
+    <div class="argyle-container">
 
-        <div class="sidebar-details">
-          <h2 class="sidebar-name">Malik Mir Hamza Nayab</h2>
-          <div class="sidebar-tagline">Researcher — ML, NLP &amp; Data Structures &amp; Algorithms</div>
-          
-          <div class="sidebar-affiliation">
-            <strong>COMSATS University Islamabad</strong><br>
-            B.S. Computer Science (CGPA 3.72/4.0)
-          </div>
-
-          <div class="sidebar-location">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-            <span>Dubai, UAE</span>
+      <!-- Left Sidebar -->
+      <aside class="argyle-sidebar" aria-label="Profile Sidebar">
+        <div class="argyle-site-picture-frame">
+          <div class="theme-site-avatar-picture">
+            <img src="assets/img/pfp.jpeg" alt="Malik Mir Hamza Nayab" width="240" height="240">
           </div>
         </div>
 
-        <hr class="sidebar-divider">
+        <div class="theme-contact-name">Malik Mir Hamza Nayab</div>
+        <div class="theme-contact-role">Researcher &amp; Systems Engineer</div>
+        
+        <div class="theme-contact-affiliation">
+          <strong>COMSATS University Islamabad</strong><br>
+          BS Computer Science (CGPA 3.72/4.0)
+        </div>
 
-        <ul class="sidebar-links" aria-label="Social and professional links">
-          <li class="sidebar-link-item">
-            <a href="https://github.com/Hamza-Nayab" target="_blank" rel="noopener noreferrer">
-              <span class="sidebar-link-icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
-              </span>
-              <span class="sidebar-link-text">github.com/Hamza-Nayab</span>
-            </a>
-          </li>
-          <li class="sidebar-link-item">
-            <a href="https://www.middelmen.com" target="_blank" rel="noopener noreferrer">
-              <span class="sidebar-link-icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
-              </span>
-              <span class="sidebar-link-text">middelmen.com (Live)</span>
-            </a>
-          </li>
-          <li class="sidebar-link-item">
-            <a href="https://doi.org/10.5281/zenodo.18445910" target="_blank" rel="noopener noreferrer">
-              <span class="sidebar-link-icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/></svg>
-              </span>
-              <span class="sidebar-link-text">Zenodo: 10.5281/zenodo.18445910</span>
-            </a>
-          </li>
-          <li class="sidebar-link-item">
-            <a href="mailto:Hamza.nayab48@gmail.com">
-              <span class="sidebar-link-icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
-              </span>
-              <span class="sidebar-link-text">Hamza.nayab48@gmail.com</span>
-            </a>
-          </li>
-          <li class="sidebar-link-item">
-            <a href="tel:+971557246461">
-              <span class="sidebar-link-icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
-              </span>
-              <span class="sidebar-link-text">+971 55 724 6461</span>
-            </a>
-          </li>
-        </ul>
+        <div class="theme-contact-location">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+          <span>Dubai, UAE</span>
+        </div>
+
+        <hr class="space-sm">
+
+        <!-- Social & Direct Link Icons -->
+        <div class="theme-contact-social-links">
+          <div class="theme-contact-social-link">
+            <div class="theme-contact-social-link-icon">
+              <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/></svg>
+            </div>
+            <div class="theme-contact-social-link-text">
+              <a href="https://doi.org/10.5281/zenodo.18445910" target="_blank" rel="noopener noreferrer">Zenodo Dataset</a>
+            </div>
+          </div>
+
+          <div class="theme-contact-social-link">
+            <div class="theme-contact-social-link-icon">
+              <svg viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+            </div>
+            <div class="theme-contact-social-link-text">
+              <a href="https://github.com/Hamza-Nayab" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </div>
+          </div>
+
+          <div class="theme-contact-social-link">
+            <div class="theme-contact-social-link-icon">
+              <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+            </div>
+            <div class="theme-contact-social-link-text">
+              <a href="https://www.middelmen.com" target="_blank" rel="noopener noreferrer">MiddelMen (Live)</a>
+            </div>
+          </div>
+
+          <div class="theme-contact-social-link">
+            <div class="theme-contact-social-link-icon">
+              <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            </div>
+            <div class="theme-contact-social-link-text">
+              <a href="mailto:Hamza.nayab48@gmail.com">Email</a>
+            </div>
+          </div>
+
+          <div class="theme-contact-social-link">
+            <div class="theme-contact-social-link-icon">
+              <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+            </div>
+            <div class="theme-contact-social-link-text">
+              <a href="tel:+971557246461">+971 55 724 6461</a>
+            </div>
+          </div>
+        </div>
+
+        <hr class="space-md">
       </aside>
 
-      <!-- Main Content Area (Right) -->
-      <main class="main-content" id="main-content">
-        <header class="page-intro">
-          <h1 class="page-intro-title">Get in Touch</h1>
-          <p class="page-intro-desc">
-            Feel free to reach out directly regarding research collaborations, algorithmic projects, graduate studies, or technical inquiries.
+      <!-- Main Content Area -->
+      <main class="argyle-content" id="main-content">
+        <div class="theme-content-title">
+          <h1 class="blt-h1 blt-weight-bold">Contact</h1>
+          <hr class="space-xs">
+          <p class="blt-h4">
+            I am happy to hear from you, whether it is about research, potential collaborations, graduate opportunities, or just to connect. Use the form below and I will get back to you as soon as I can.
           </p>
-        </header>
+        </div>
 
-        <!-- Direct Contact Channels Grid -->
-        <section class="content-section reveal-on-scroll" aria-labelledby="direct-contact-heading">
-          <div class="section-header">
-            <h2 class="section-title" id="direct-contact-heading">Direct Contact Details</h2>
-            <span class="section-subtitle">Verified info from CV</span>
-          </div>
+        <hr class="space-md">
 
+        <!-- Owlstown Contact Form Container -->
+        <div class="theme-content-body">
+          <form class="theme-form" id="contactForm" action="/contact_form" method="POST">
+            
+            <div class="form-group">
+              <label class="blt-p" for="contact_name">Name</label>
+              <input class="theme-input" type="text" name="name" id="contact_name" placeholder="Your name" required>
+            </div>
+
+            <div class="form-group">
+              <label class="blt-p" for="contact_email">Email</label>
+              <input class="theme-input" type="email" name="email" id="contact_email" placeholder="name@organization.edu" required>
+            </div>
+
+            <div class="form-group">
+              <label class="blt-p" for="contact_subject">Subject</label>
+              <input class="theme-input" type="text" name="subject" id="contact_subject" placeholder="Research / Technical Collaboration" required>
+            </div>
+
+            <div class="form-group">
+              <label class="blt-p" for="contact_body">Message</label>
+              <textarea class="theme-input" rows="8" name="body" id="contact_body" placeholder="Please write your inquiry here..." required></textarea>
+            </div>
+
+            <div id="formFeedback" style="display: none;"></div>
+
+            <hr class="space-sm">
+            
+            <button type="submit" class="theme-btn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/></svg>
+              <span>Send Message</span>
+            </button>
+          </form>
+        </div>
+
+        <hr class="space-lg">
+
+        <!-- Direct Contact Info Grid -->
+        <div class="theme-content-title">
+          <h2 class="blt-h2 blt-weight-bold">Direct Channels</h2>
+          <hr class="space-xs">
           <div class="contact-cards-grid">
-            <!-- Email -->
             <div class="contact-card">
-              <div class="contact-card-icon" aria-hidden="true">
+              <div class="contact-card-icon">
                 <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
               </div>
               <div>
@@ -165,9 +238,8 @@
               </div>
             </div>
 
-            <!-- Phone -->
             <div class="contact-card">
-              <div class="contact-card-icon" aria-hidden="true">
+              <div class="contact-card-icon">
                 <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
               </div>
               <div>
@@ -178,9 +250,8 @@
               </div>
             </div>
 
-            <!-- Location -->
             <div class="contact-card">
-              <div class="contact-card-icon" aria-hidden="true">
+              <div class="contact-card-icon">
                 <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
               </div>
               <div>
@@ -189,108 +260,31 @@
               </div>
             </div>
 
-            <!-- GitHub -->
             <div class="contact-card">
-              <div class="contact-card-icon" aria-hidden="true">
+              <div class="contact-card-icon">
                 <svg viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
               </div>
               <div>
-                <div class="contact-card-label">Source Code &amp; Repos</div>
+                <div class="contact-card-label">GitHub Repository</div>
                 <div class="contact-card-value">
                   <a href="https://github.com/Hamza-Nayab" target="_blank" rel="noopener noreferrer">github.com/Hamza-Nayab</a>
                 </div>
               </div>
             </div>
-
-            <!-- MiddelMen Platform -->
-            <div class="contact-card">
-              <div class="contact-card-icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
-              </div>
-              <div>
-                <div class="contact-card-label">Live Platform</div>
-                <div class="contact-card-value">
-                  <a href="https://www.middelmen.com" target="_blank" rel="noopener noreferrer">middelmen.com</a>
-                </div>
-              </div>
-            </div>
-
-            <!-- Zenodo Dataset -->
-            <div class="contact-card">
-              <div class="contact-card-icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/></svg>
-              </div>
-              <div>
-                <div class="contact-card-label">Zenodo Repository</div>
-                <div class="contact-card-value">
-                  <a href="https://doi.org/10.5281/zenodo.18445910" target="_blank" rel="noopener noreferrer">DOI: 10.5281/zenodo.18445910</a>
-                </div>
-              </div>
-            </div>
           </div>
-
-          <!-- Direct Email Action Button -->
-          <div style="margin-top: 24px;">
-            <a href="mailto:Hamza.nayab48@gmail.com?subject=Research%20/%20Engineering%20Inquiry" class="btn btn-primary">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
-              <span>Compose Email Directly</span>
-            </a>
-          </div>
-        </section>
-
-        <!-- Optional Formspree Form Scaffold -->
-        <!-- 
-          TODO: To activate this contact form via Formspree or similar serverless service:
-          1. Sign up at https://formspree.io and create a new form endpoint.
-          2. Replace the 'action' attribute below with your Formspree endpoint URL (e.g. action="https://formspree.io/f/your_id").
-          3. Uncomment the form below.
-        -->
-        <section class="content-section reveal-on-scroll" aria-labelledby="form-heading">
-          <div class="section-header">
-            <h2 class="section-title" id="form-heading">Send a Message</h2>
-            <span class="section-subtitle">Form Inquiry (Pre-configured for Formspree)</span>
-          </div>
-
-          <div class="contact-form-container">
-            <form action="https://formspree.io/f/placeholder" method="POST">
-              <div class="form-group">
-                <label for="contact-name" class="form-label">Full Name</label>
-                <input type="text" id="contact-name" name="name" class="form-input" placeholder="Your name" required>
-              </div>
-
-              <div class="form-group">
-                <label for="contact-email" class="form-label">Email Address</label>
-                <input type="email" id="contact-email" name="email" class="form-input" placeholder="name@organization.edu" required>
-              </div>
-
-              <div class="form-group">
-                <label for="contact-subject" class="form-label">Subject</label>
-                <input type="text" id="contact-subject" name="subject" class="form-input" placeholder="Collaboration / Inquiry topic" required>
-              </div>
-
-              <div class="form-group">
-                <label for="contact-message" class="form-label">Message</label>
-                <textarea id="contact-message" name="message" class="form-textarea" placeholder="Please write your inquiry here..." required></textarea>
-              </div>
-
-              <button type="submit" class="btn btn-primary">
-                <span>Send Message</span>
-                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/></svg>
-              </button>
-            </form>
-          </div>
-        </section>
-
+        </div>
       </main>
+
     </div>
   </div>
 
-  <footer class="site-footer">
-    <div class="footer-container">
-      <div class="footer-copy">
-        &copy; 2026 Malik Mir Hamza Nayab. Built with semantic HTML, CSS &amp; Vanilla JS.
+  <!-- Footer -->
+  <footer class="argyle-footer">
+    <div class="argyle-footer-container">
+      <div class="blt-p">
+        &copy; 2026 Malik Mir Hamza Nayab &nbsp;&middot;&nbsp; All rights reserved.
       </div>
-      <ul class="footer-links">
+      <ul class="argyle-footer-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="research.html">Research</a></li>
         <li><a href="projects.html">Projects</a></li>
@@ -301,6 +295,17 @@
     </div>
   </footer>
 
+  <!-- Floating Owlstown Tools Button -->
+  <div class="theme-tools-button">
+    <button class="theme-tools-btn" id="toolsBtn">Tools</button>
+    <div class="theme-tools-menu" id="toolsMenu">
+      <button class="theme-tools-menu-item" id="scrollTopBtn">Top of Page</button>
+      <a class="theme-tools-menu-item" href="mailto:Hamza.nayab48@gmail.com">Direct Email</a>
+      <a class="theme-tools-menu-item" href="https://github.com/Hamza-Nayab" target="_blank">GitHub Profile</a>
+    </div>
+  </div>
+
+  <!-- Main JS -->
   <script src="assets/js/main.js"></script>
 </body>
 </html>

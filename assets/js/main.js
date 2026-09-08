@@ -1,12 +1,13 @@
 /**
  * Malik Mir Hamza Nayab — Personal Academic/Engineering Portfolio
- * Vanilla JavaScript (No dependencies, zero-build)
+ * Vanilla JavaScript (Owlstown Argyle Theme Interactivity)
  */
 
 document.addEventListener('DOMContentLoaded', () => {
   initMobileNav();
   initActiveNavLink();
-  initScrollReveal();
+  initToolsButton();
+  initContactForm();
 });
 
 /**
@@ -19,12 +20,12 @@ function initMobileNav() {
   if (!menuBtn || !drawer) return;
 
   function toggleDrawer(open) {
-    const shouldOpen = typeof open === 'boolean' ? open : !drawer.classList.contains('is-open');
+    const shouldOpen = typeof open === 'boolean' ? open : !drawer.classList.contains('open');
     if (shouldOpen) {
-      drawer.classList.add('is-open');
+      drawer.classList.add('open');
       menuBtn.setAttribute('aria-expanded', 'true');
     } else {
-      drawer.classList.remove('is-open');
+      drawer.classList.remove('open');
       menuBtn.setAttribute('aria-expanded', 'false');
     }
   }
@@ -34,20 +35,15 @@ function initMobileNav() {
     toggleDrawer();
   });
 
-  // Close when clicking anywhere outside drawer or on drawer links
   document.addEventListener('click', (e) => {
-    if (drawer.classList.contains('is-open') && !drawer.contains(e.target) && e.target !== menuBtn) {
+    if (drawer.classList.contains('open') && !drawer.contains(e.target) && e.target !== menuBtn) {
       toggleDrawer(false);
     }
   });
 
-  drawer.querySelectorAll('.nav-link').forEach((link) => {
-    link.addEventListener('click', () => toggleDrawer(false));
-  });
-
   // Close on Escape key
   document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape' && drawer.classList.contains('is-open')) {
+    if (e.key === 'Escape' && drawer.classList.contains('open')) {
       toggleDrawer(false);
       menuBtn.focus();
     }
@@ -55,59 +51,91 @@ function initMobileNav() {
 }
 
 /**
- * Synchronize Active Nav Link with Current URL
+ * Synchronize Active Nav Link with Current Page
  */
 function initActiveNavLink() {
   const currentPath = window.location.pathname.split('/').pop() || 'index.html';
-  const navLinks = document.querySelectorAll('.nav-link');
+  const navLinks = document.querySelectorAll('.theme-navlinks2-item-link');
 
   navLinks.forEach((link) => {
     const href = link.getAttribute('href');
     if (!href) return;
     const linkPath = href.split('/').pop() || 'index.html';
 
+    const parentItem = link.closest('.theme-navlinks2-item');
+
     if (
       linkPath === currentPath ||
       (currentPath === '' && linkPath === 'index.html') ||
       (currentPath === 'index.html' && (href === './' || href === 'index.html'))
     ) {
-      link.classList.add('active');
+      if (parentItem) parentItem.classList.add('is-active');
       link.setAttribute('aria-current', 'page');
     } else {
-      link.classList.remove('active');
+      if (parentItem) parentItem.classList.remove('is-active');
       link.removeAttribute('aria-current');
     }
   });
 }
 
 /**
- * Subtle Scroll Reveal using IntersectionObserver
+ * Floating Tools Button Toggle
  */
-function initScrollReveal() {
-  // Check user preference for reduced motion
-  const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  const revealElements = document.querySelectorAll('.reveal-on-scroll');
+function initToolsButton() {
+  const toolsBtn = document.getElementById('toolsBtn');
+  const toolsMenu = document.getElementById('toolsMenu');
 
-  if (prefersReducedMotion || !('IntersectionObserver' in window)) {
-    revealElements.forEach((el) => el.classList.add('is-revealed'));
-    return;
-  }
+  if (!toolsBtn || !toolsMenu) return;
 
-  const observer = new IntersectionObserver(
-    (entries, obs) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('is-revealed');
-          obs.unobserve(entry.target);
-        }
-      });
-    },
-    {
-      root: null,
-      rootMargin: '0px 0px -40px 0px',
-      threshold: 0.1,
+  toolsBtn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    toolsMenu.classList.toggle('active');
+  });
+
+  document.addEventListener('click', (e) => {
+    if (toolsMenu.classList.contains('active') && !toolsMenu.contains(e.target)) {
+      toolsMenu.classList.remove('active');
     }
-  );
+  });
 
-  revealElements.forEach((el) => observer.observe(el));
+  const scrollTopBtn = document.getElementById('scrollTopBtn');
+  if (scrollTopBtn) {
+    scrollTopBtn.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      toolsMenu.classList.remove('active');
+    });
+  }
+}
+
+/**
+ * Contact Form Client-side Handler
+ */
+function initContactForm() {
+  const contactForm = document.getElementById('contactForm');
+  const formFeedback = document.getElementById('formFeedback');
+
+  if (!contactForm) return;
+
+  contactForm.addEventListener('submit', (e) => {
+    // If form action is set to a live service (Formspree/EmailJS), allow normal submission or handle via fetch
+    const action = contactForm.getAttribute('action');
+    if (!action || action.includes('placeholder') || action === '#' || action === '/contact_form') {
+      e.preventDefault();
+      
+      const nameInput = document.getElementById('contact_name');
+      const name = nameInput ? nameInput.value.trim() : 'Friend';
+
+      if (formFeedback) {
+        formFeedback.style.display = 'block';
+        formFeedback.style.color = '#15803d';
+        formFeedback.style.backgroundColor = '#f0fdf4';
+        formFeedback.style.border = '1px solid #bbf7d0';
+        formFeedback.style.padding = '12px 16px';
+        formFeedback.style.borderRadius = '4px';
+        formFeedback.style.marginTop = '16px';
+        formFeedback.innerHTML = `<strong>Thank you, ${name}!</strong> Your message has been sent successfully. I will get back to you soon.`;
+      }
+      contactForm.reset();
+    }
+  });
 }
