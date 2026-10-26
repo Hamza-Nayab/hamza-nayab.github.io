@@ -22,6 +22,11 @@
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <link rel="manifest" href="site.webmanifest">
 
+  <!-- Preconnect for Google Fonts & Prefetch Destination -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="prefetch" href="contact.html">
+
   <!-- Main Stylesheet -->
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -198,7 +203,7 @@
 
           <!-- Embedded PDF Viewer Container -->
           <div class="pdf-viewer-container" id="pdfContainer" style="width: 100%; border-radius: var(--radius-md); overflow: hidden; box-shadow: 0 4px 16px rgba(0,0,0,0.12); background-color: #525659; position: relative;">
-            <iframe id="pdfIframe" src="assets/cv/Hamza_Nayab_CV.pdf#toolbar=0" style="width: 100%; height: 980px; border: none; display: block;" title="Curriculum Vitae Document"></iframe>
+            <iframe id="pdfIframe" src="assets/cv/Hamza_Nayab_CV.pdf#toolbar=0" loading="lazy" style="width: 100%; height: 980px; border: none; display: block;" title="Curriculum Vitae Document"></iframe>
           </div>
 
         </div>

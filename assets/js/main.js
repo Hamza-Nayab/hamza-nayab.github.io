@@ -8,6 +8,8 @@ document.addEventListener('DOMContentLoaded', () => {
   initActiveNavLink();
   initToolsButton();
   initContactForm();
+  initFastNavigation();
+  initLinkPrefetch();
 });
 
 /**
@@ -137,5 +139,81 @@ function initContactForm() {
       }
       contactForm.reset();
     }
+  });
+}
+
+/**
+ * Fast Navigation & PDF Iframe Cleanup
+ * Immediately detaches heavy embedded PDF iframes upon clicking internal links,
+ * avoiding browser unload freezes and process hangs.
+ */
+function initFastNavigation() {
+  const pdfIframe = document.getElementById('pdfIframe');
+  if (!pdfIframe) return;
+
+  const internalLinks = document.querySelectorAll('a[href]');
+  internalLinks.forEach((link) => {
+    const href = link.getAttribute('href');
+    if (
+      !href ||
+      href.startsWith('#') ||
+      href.startsWith('mailto:') ||
+      href.startsWith('tel:') ||
+      href.startsWith('http://') ||
+      href.startsWith('https://') ||
+      link.target === '_blank'
+    ) {
+      return;
+    }
+
+    link.addEventListener('click', () => {
+      try {
+        pdfIframe.src = 'about:blank';
+      } catch (err) {}
+    });
+  });
+
+  window.addEventListener('beforeunload', () => {
+    try {
+      pdfIframe.src = 'about:blank';
+    } catch (err) {}
+  });
+}
+
+/**
+ * Speculative Link Prefetching on Hover / Touch
+ * Prefetches destination pages so navigating between pages (e.g., CV -> Contact)
+ * is perceived as instant (0ms latency).
+ */
+function initLinkPrefetch() {
+  const prefetched = new Set();
+
+  function prefetch(url) {
+    if (!url || prefetched.has(url)) return;
+    prefetched.add(url);
+    const link = document.createElement('link');
+    link.rel = 'prefetch';
+    link.href = url;
+    document.head.appendChild(link);
+  }
+
+  const internalLinks = document.querySelectorAll('a[href]');
+  internalLinks.forEach((link) => {
+    const href = link.getAttribute('href');
+    if (
+      !href ||
+      href.startsWith('#') ||
+      href.startsWith('mailto:') ||
+      href.startsWith('tel:') ||
+      href.startsWith('http://') ||
+      href.startsWith('https://') ||
+      link.target === '_blank'
+    ) {
+      return;
+    }
+
+    // Prefetch on hover (desktop) or touchstart (mobile)
+    link.addEventListener('mouseenter', () => prefetch(href), { passive: true });
+    link.addEventListener('touchstart', () => prefetch(href), { passive: true });
   });
 }
