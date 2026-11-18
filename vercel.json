@@ -1,0 +1,7 @@
+{
+  "cleanUrls": true,
+  "rewrites": [
+    { "source": "/Romanurdu", "destination": "/assets/roman.pdf" },
+    { "source": "/romanurdu", "destination": "/assets/roman.pdf" }
+  ]
+}

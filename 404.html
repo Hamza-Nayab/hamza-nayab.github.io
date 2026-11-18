@@ -2,6 +2,14 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <script>
+    (function() {
+      var p = window.location.pathname.toLowerCase();
+      if (p.indexOf('romanurdu') !== -1) {
+        window.location.replace('assets/roman.pdf');
+      }
+    })();
+  </script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Page Not Found — Malik Mir Hamza Nayab</title>
   <meta name="description" content="Page not found. Personal academic and engineering portfolio of Malik Mir Hamza Nayab.">
@@ -46,8 +54,12 @@
         <div class="theme-contact-name">Malik Mir Hamza Nayab</div>
         <div class="theme-contact-role">Researcher &amp; Systems Engineer</div>
         <div class="theme-contact-affiliation">
-          <strong>COMSATS University Islamabad</strong><br>
-          BS Computer Science (CGPA 3.72/4.0)
+          <strong>COMSATS University Islamabad, Abbottabad Campus</strong><br>
+          B.S. in Computer Science (CGPA: 3.72 / 4.00, Spring 2026)
+        </div>
+        <div class="theme-contact-location">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+          <span>Dubai, United Arab Emirates</span>
         </div>
       </aside>
 

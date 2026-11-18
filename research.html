@@ -111,13 +111,13 @@
         <div class="theme-contact-role">Researcher &amp; Systems Engineer</div>
         
         <div class="theme-contact-affiliation">
-          <strong>COMSATS University Islamabad</strong><br>
-          BS Computer Science (CGPA 3.72/4.0)
+          <strong>COMSATS University Islamabad, Abbottabad Campus</strong><br>
+          B.S. in Computer Science (CGPA: 3.72 / 4.00, Spring 2026)
         </div>
 
         <div class="theme-contact-location">
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-          <span>Dubai, UAE</span>
+          <span>Dubai, United Arab Emirates</span>
         </div>
 
         <hr class="space-sm">
@@ -138,7 +138,7 @@
               <svg viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
             </div>
             <div class="theme-contact-social-link-text">
-              <a href="https://github.com/Hamza-Nayab" target="_blank" rel="noopener noreferrer">GitHub</a>
+              <a href="https://github.com/Hamza-Nayab" target="_blank" rel="noopener noreferrer">GitHub Profile</a>
             </div>
           </div>
 
@@ -147,7 +147,7 @@
               <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
             </div>
             <div class="theme-contact-social-link-text">
-              <a href="https://www.middelmen.com" target="_blank" rel="noopener noreferrer">MiddelMen (Live)</a>
+              <a href="https://middelmen.com" target="_blank" rel="noopener noreferrer">MiddelMen (Live)</a>
             </div>
           </div>
 
@@ -179,7 +179,7 @@
           <h1 class="blt-h1 blt-weight-bold">Research &amp; Publications</h1>
           <hr class="space-xs">
           <p class="blt-h4">
-            Peer-reviewed manuscripts, algorithmic architectures, statistical benchmarks, and open-access datasets in low-resource multilingual machine learning and adaptive sorting.
+            Peer-reviewed manuscripts, algorithmic architectures, statistical benchmarks, and open-access datasets in adaptive and parallel algorithms, algorithm engineering, low-resource multilingual NLP, cross-dialect robustness, and uncertainty-aware statistical evaluation.
           </p>
         </div>
 
@@ -190,67 +190,73 @@
           <!-- Item 1: LadderSort -->
           <article class="academic-card" id="laddersort">
             <div class="card-header-line">
-              <h2 class="card-title">LadderSort: Adaptive Stable Sorting for Partially Ordered Data</h2>
-              <span class="card-status-badge review">Under Review</span>
+              <h2 class="card-title">LadderSort: Adaptive Sorting via Interleaved Nondecreasing Subsequences</h2>
+              <span class="card-status-badge live">Published &mdash; IEEE Access (Oct 2026)</span>
             </div>
             <div class="card-meta-line">
-              <strong>First Author</strong>, Advised by Dr. Osman Khalid — Manuscript Submitted
+              <strong>M. M. H. Nayab</strong>, R. N. B. Rais, O. Khalid, and I. A. Khan. <em>IEEE Access</em>, vol. 14, pp. 170095&ndash;170113, Oct. 2026 (COMSATS University Islamabad &amp; Ajman University; Advisor: Dr. Osman Khalid).
             </div>
             <ul class="card-bullets">
-              <li>Engineered a novel deterministic, comparison-based sorting algorithm in C++ that dynamically adapts to $K$, the minimum number of nondecreasing subsequences, formally proving algorithmic optimality where $K = \mathrm{LDS}(A)$.</li>
-              <li>Designed a robust two-phase architecture: a stateful, hinted greedy decomposition utilizing exponential galloping, followed by a dynamically selected $K$-way loser-tree tournament or two-way galloping merge strategy.</li>
-              <li>Benchmarked against <code>std::sort</code> and TimSort on Apple M1 architectures handling datasets up to 100M elements; achieved up to 1.45× wall-clock speedups on real-world GitHub Archive event streams ($N=55\text{K}, K=368$) and consistent 30–50% performance gains on synthetic interleaved stream workloads.</li>
+              <li>Formulated a deterministic, comparison-based sorting algorithm parameterized by $K$, the minimum number of nondecreasing subsequences covering the input; proved online decomposition optimality $K_{\text{LS}}(A) = K^*(A) = \text{LDS}(A)$ via Dilworth's theorem, $O(N \log(K+1))$ time, $O(N+K)$ auxiliary space, and $\Theta(N \log\sqrt{N})$ average-case complexity.</li>
+              <li>Engineered a two-phase C++20 implementation combining a three-stage stateful hinted search (local probe, bidirectional exponential gallop, binary search) over a contiguous tail vector with a $K$-dispatched merge (direct return for $K=1$, galloping two-way merge for $K=2$, flat-array loser tree for $K&gt;2$) and a hybrid $\lceil\sqrt{N}\rceil$ fallback guardrail for high-$K$ adversarial inputs.</li>
+              <li>Benchmarked against TimSort, IntroSort (<code>std::sort</code>), QuickSort, PatienceSort, and EncroachingListsSort on Apple M1 up to $N = 10^8$: achieved up to 1.45× wall-clock speedup over TimSort on a 55,364-row GH Archive event trace ($K=368$), 1.38×&ndash;2.66× speedups over subsequence-adaptive baselines, and 2–4 comparisons per element on small-$K$ workloads.</li>
             </ul>
             <div class="card-tags">
-              <span class="tag">C++</span>
-              <span class="tag">Algorithms</span>
-              <span class="tag">Optimal Sorting</span>
+              <span class="tag">C++20</span>
+              <span class="tag">Adaptive Algorithms</span>
+              <span class="tag">Algorithm Engineering</span>
+              <span class="tag">Dilworth's Theorem</span>
               <span class="tag">Tournament Tree</span>
-              <span class="tag">Galloping Search</span>
               <span class="tag">Benchmarking</span>
+            </div>
+            <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+              <a href="https://doi.org/10.1109/ACCESS.2026.3748456" target="_blank" rel="noopener noreferrer" class="theme-btn" style="font-size: 0.85rem; padding: 6px 14px;">IEEE Access Paper (DOI: 10.1109/ACCESS.2026.3748456) &nearr;</a>
+              <a href="https://github.com/Hamza-Nayab/LadderSortAlgo" target="_blank" rel="noopener noreferrer" class="theme-btn theme-btn-secondary" style="font-size: 0.85rem; padding: 6px 14px;">GitHub Repository &nearr;</a>
             </div>
           </article>
 
           <!-- Item 2: Cross-Dialect Robustness of Arabic PLMs -->
-          <article class="academic-card" id="arabic-plms">
+          <article class="academic-card" id="arabic-sentiment">
             <div class="card-header-line">
-              <h2 class="card-title">Cross-Dialect Robustness of Arabic PLMs for Sentiment Analysis</h2>
-              <span class="card-status-badge review">Submitted to FIT Conference Islamabad</span>
+              <h2 class="card-title">Dialect-Level Generalization of Arabic Sentiment Classifiers: An Exact-Duplicate-Free, Uncertainty-Aware Evaluation of Encoders and LLMs</h2>
+              <span class="card-status-badge review">Preprint (CC BY 4.0) &mdash; Nov 2026</span>
             </div>
             <div class="card-meta-line">
-              <strong>First Author</strong>
+              <strong>M. M. H. Nayab</strong>, S. G. Raza, and B. Bibi. Preprint (CC BY 4.0), Nov. 2026.
             </div>
             <ul class="card-bullets">
-              <li>Architected a comprehensive multi-dialect evaluation framework ($n=5,207$ tweets via ArSarcasm corpus) benchmarking AraBERT, MARBERT, and CAMeL-BERT across 5 distinct regional varieties (Egyptian, Gulf, Levantine, Maghrebi, MSA).</li>
-              <li>Formulated the variance-based Dialect Robustness Index (DRI) to quantify structural resilience; validated empirical findings using 1,000-resample bootstrap confidence intervals and instance-level paired McNemar tests ($p&lt;0.001$).</li>
-              <li>Identified and resolved a critical pipeline memory artifact in zero-shot checkpoint configurations, proving empirically that fine-tuned task adaptation significantly supersedes frozen-representation separability in PLMs.</li>
+              <li>Audited ArSarcasm and ArSarcasm-v2 using text normalization, exact character 4-gram Jaccard near-duplicate detection, and MADAR-6/NADI dialect-ID cross-checks, identifying 44 leaked train–test duplicates in the official ArSarcasm release and curating leak-free splits over 5,089 unique binary tweets across MSA, Egyptian, Levantine, and Gulf Arabic.</li>
+              <li>Benchmarked 11 fine-tuned transformer encoders (MARBERTv2, AraBERTv02, CAMeLBERT variants, XLM-R-Base) and 4 instruction-tuned 7–9B LLMs (Fanar-1-9B, Qwen2.5-7B, AceGPT-v2-8B, ALLaM-7B) across pooled, size-matched leave-one-dialect-out (LODO), and MSA-only regimes over 5 seeds, replicating cross-dialect transfer findings on ArSarcasm-v2.</li>
+              <li>Built an uncertainty-aware evaluation suite combining 2,000-resample hierarchical bootstrap intervals, TOST equivalence testing ($\pm 0.02$), Holm–Bonferroni corrected McNemar tests, and a NumPyro Bayesian beta-binomial mixed model (NUTS); demonstrated that variance-based indices (DRI) rank a majority classifier #1 of 79 systems on F1, establishing level-aware HM-F1 (MARBERTv2: 0.870; Fanar-1-9B 8-shot: 0.849) and WD-F1 instead.</li>
             </ul>
             <div class="card-tags">
-              <span class="tag">PyTorch</span>
-              <span class="tag">Hugging Face</span>
-              <span class="tag">AraBERT</span>
-              <span class="tag">MARBERT</span>
-              <span class="tag">Dialect Robustness Index (DRI)</span>
-              <span class="tag">Statistical Significance</span>
+              <span class="tag">Arabic NLP</span>
+              <span class="tag">Cross-Dialect Robustness</span>
+              <span class="tag">MARBERTv2</span>
+              <span class="tag">LLMs</span>
+              <span class="tag">NumPyro Bayesian</span>
+              <span class="tag">Statistical Evaluation</span>
+            </div>
+            <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+              <a href="https://doi.org/10.5281/zenodo.24326845" target="_blank" rel="noopener noreferrer" class="theme-btn" style="font-size: 0.85rem; padding: 6px 14px;">Preprint (DOI: 10.5281/zenodo.24326845) &nearr;</a>
+              <a href="https://github.com/Hamza-Nayab/arabic-dialect-robustness" target="_blank" rel="noopener noreferrer" class="theme-btn theme-btn-secondary" style="font-size: 0.85rem; padding: 6px 14px;">GitHub Repository &nearr;</a>
             </div>
           </article>
 
           <!-- Item 3: Roman Urdu Emotion Classification Benchmark -->
           <article class="academic-card" id="roman-urdu-benchmark">
             <div class="card-header-line">
-              <h2 class="card-title">Roman Urdu Emotion Classification Benchmark (GoEmotions)</h2>
-              <span class="card-status-badge review">Manuscript in Preparation</span>
+              <h2 class="card-title">A Reproducible Benchmark for Roman Urdu Emotion Classification via LLM-Based Dataset Construction and Orthographic Variation Modeling</h2>
+              <span class="card-status-badge review">Preprint (CC BY 4.0) &mdash; 2026</span>
             </div>
             <div class="card-meta-line">
-              <strong>First Author</strong>
+              <strong>M. M. H. Nayab</strong> and G. Batool. Preprint (CC BY 4.0), 2026.
             </div>
             <ul class="card-bullets">
-              <li>Benchmarked three multilingual transformer encoders (XLM-R, mBERT, MuRIL) across 54 controlled training runs on 28-class Roman Urdu emotion classification, sweeping preprocessing regime (OFF/ON), spelling-variant augmentation ($k \in \{0,1,3\}$), and epochs (2–4) under frozen, leakage-free splits.</li>
-              <li>Achieved the best fine-grained result of Macro-F1 = 0.2869 (XLM-R, ON, $k=3$); ran a size-controlled ablation isolating the contribution of orthographic variant exposure from raw training-data volume.</li>
-              <li>Standardized zero-shot baselines by mapping the GoEmotions taxonomy to Ekman-6, attaining 70.31% accuracy (Macro-F1 = 0.5004) with XLM-R, while generating publication-grade analytical artifacts (confusion matrices, per-class reports, run logs).</li>
+              <li>Executed an idempotent 54-run evaluation grid across 27 configurations on dual NVIDIA T4 GPUs sweeping orthographic variation $k \in \{0,1,3\}$ and epochs $\in \{2,3,4\}$ across XLM-R, mBERT, and MuRIL, obtaining 0.2909 canonical 28-class Macro-F1 (3-seed mean $0.2894 \pm 0.0025$) and 0.5004 Ekman-6 Macro-F1 (70.31% accuracy) with XLM-R.</li>
+              <li>Established via a size-controlled ablation that orthographic augmentation gains vanish at fixed training volume, and audited experimental artifacts to document MuRIL optimization collapse in 3/9 grid cells and a $\approx 0.01$ Macro-F1 single-example perturbation noise floor.</li>
             </ul>
             <div class="card-tags">
-              <span class="tag">Transformers</span>
               <span class="tag">XLM-RoBERTa</span>
               <span class="tag">mBERT</span>
               <span class="tag">MuRIL</span>
@@ -258,20 +264,23 @@
               <span class="tag">Roman Urdu</span>
               <span class="tag">Ablation Studies</span>
             </div>
+            <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+              <a href="/Romanurdu" class="theme-btn" style="font-size: 0.85rem; padding: 6px 14px;">Read Preprint (PDF) &rarr;</a>
+              <a href="https://github.com/hamzanayab/roman-urdu-emotion-benchmark" target="_blank" rel="noopener noreferrer" class="theme-btn theme-btn-secondary" style="font-size: 0.85rem; padding: 6px 14px;">GitHub Repository &nearr;</a>
+            </div>
           </article>
 
           <!-- Item 4: Large-Scale Dataset Creation -->
           <article class="academic-card" id="roman-urdu-dataset">
             <div class="card-header-line">
-              <h2 class="card-title">Large-Scale Dataset Creation — Roman Urdu GoEmotions</h2>
-              <span class="card-status-badge live">Zenodo Open Access</span>
+              <h2 class="card-title">A Reproducible Roman Urdu Emotion Benchmark Derived from GoEmotions</h2>
+              <span class="card-status-badge live">Zenodo Open Access (CC BY 4.0) &mdash; 2026</span>
             </div>
             <div class="card-meta-line">
-              <strong>Zenodo DOI:</strong> <a href="https://doi.org/10.5281/zenodo.18445910" target="_blank" rel="noopener noreferrer">10.5281/zenodo.18445910</a>
+              <strong>M. M. H. Nayab</strong>, Z. Iqbal, M. Zulqrnain, and G. Batool. Zenodo (CC BY 4.0), 2026.
             </div>
             <ul class="card-bullets">
-              <li>Engineered a highly fault-tolerant English &rarr; Roman Urdu translation pipeline leveraging Ollama Gemma-3 (4.3B parameter LLM) to construct the largest public Roman Urdu emotion dataset (54,263 samples) tailored for low-resource NLP research.</li>
-              <li>Developed a resumable, chunked-processing backend (100-row batch execution) enforcing strict emotion-preserving constraints, automated quality control, and anomalous audit flagging to safely operate within Kaggle/Colab transient limits.</li>
+              <li>Developed a fault-tolerant, resumable English-to-Roman Urdu translation pipeline using Gemma-3 via Ollama with 100-row append-only batching, 10-second per-sample timeouts, and rule-based QA anomaly flagging across 54,263 instances (surfacing 8,619 anomalous generations; 53,117 curated rows in frozen 80/10/10 splits with QA logs and rehydration scripts).</li>
             </ul>
             <div class="card-tags">
               <span class="tag">Zenodo</span>
@@ -281,7 +290,7 @@
               <span class="tag">Data Engineering</span>
             </div>
             <div>
-              <a href="https://doi.org/10.5281/zenodo.18445910" target="_blank" rel="noopener noreferrer" class="theme-btn" style="font-size: 0.85rem; padding: 6px 14px;">Access Dataset on Zenodo &nearr;</a>
+              <a href="https://doi.org/10.5281/zenodo.18445910" target="_blank" rel="noopener noreferrer" class="theme-btn" style="font-size: 0.85rem; padding: 6px 14px;">Access Dataset on Zenodo (DOI: 10.5281/zenodo.18445910) &nearr;</a>
             </div>
           </article>
 
@@ -314,7 +323,7 @@
     <div class="theme-tools-menu" id="toolsMenu">
       <button class="theme-tools-menu-item" id="scrollTopBtn">Top of Page</button>
       <a class="theme-tools-menu-item" href="mailto:Hamza.nayab48@gmail.com">Direct Email</a>
-      <a class="theme-tools-menu-item" href="https://github.com/Hamza-Nayab" target="_blank">GitHub Profile</a>
+      <a class="theme-tools-menu-item" href="https://github.com/Hamza-Nayab" target="_blank" rel="noopener noreferrer">GitHub Profile</a>
     </div>
   </div>
 

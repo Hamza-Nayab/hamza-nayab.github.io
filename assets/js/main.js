@@ -10,7 +10,23 @@ document.addEventListener('DOMContentLoaded', () => {
   initContactForm();
   initFastNavigation();
   initLinkPrefetch();
+  initRomanUrduRouting();
 });
+
+/**
+ * Handle /Romanurdu route navigation gracefully
+ */
+function initRomanUrduRouting() {
+  document.addEventListener('click', (e) => {
+    const a = e.target.closest('a');
+    if (!a) return;
+    const href = a.getAttribute('href');
+    if (href && (href === '/Romanurdu' || href === 'Romanurdu' || href === '/romanurdu')) {
+      e.preventDefault();
+      window.location.href = 'assets/roman.pdf';
+    }
+  });
+}
 
 /**
  * Mobile Navigation Drawer Toggle & Accessibility
