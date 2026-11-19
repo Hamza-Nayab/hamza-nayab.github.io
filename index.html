@@ -129,6 +129,15 @@
         <div class="theme-contact-social-links">
           <div class="theme-contact-social-link">
             <div class="theme-contact-social-link-icon">
+              <svg viewBox="0 0 24 24"><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/></svg>
+            </div>
+            <div class="theme-contact-social-link-text">
+              <a href="https://doi.org/10.1109/ACCESS.2026.3748456" target="_blank" rel="noopener noreferrer">LadderSort (IEEE Access)</a>
+            </div>
+          </div>
+
+          <div class="theme-contact-social-link">
+            <div class="theme-contact-social-link-icon">
               <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/></svg>
             </div>
             <div class="theme-contact-social-link-text">
@@ -272,30 +281,29 @@
 
           <article class="academic-card">
             <div class="card-header-line">
-              <h3 class="card-title" style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
-                <img src="assets/img/middelmen_logo.png" alt="MiddelMen Logo" style="height: 24px; width: 24px; border-radius: 4px; object-fit: contain; box-shadow: 0 1px 3px rgba(0,0,0,0.12);">
-                <a href="https://middelmen.com" target="_blank" rel="noopener noreferrer">MiddelMen (TrustThread)</a>
-              </h3>
-              <span class="card-status-badge live">Live Production</span>
+              <h3 class="card-title">Dialect-Level Generalization of Arabic Sentiment Classifiers: An Exact-Duplicate-Free, Uncertainty-Aware Evaluation of Encoders and LLMs</h3>
+              <span class="card-status-badge review">Preprint &bull; Nov 2026</span>
             </div>
             <div class="card-meta-line">
-              <strong>Full-Stack Sole Developer</strong> &mdash; Scalable Social-Commerce Trust Platform
+              <strong>First Author</strong> &mdash; M. M. H. Nayab, S. G. Raza, and B. Bibi. Preprint (CC BY 4.0), Nov. 2026
             </div>
             <ul class="card-bullets">
-              <li>Architected and deployed a decoupled React/Vite SPA and Node.js/Express REST API with GitHub Actions CI/CD, Google OAuth 2.0/bcrypt authentication, and Cloudflare R2 object storage.</li>
-              <li>Designed normalized PostgreSQL schemas using Drizzle ORM enforcing multi-role RBAC, verified seller reviews, dispute logging, and dynamic SSR crawler SEO metadata.</li>
+              <li>Audited ArSarcasm and ArSarcasm-v2 benchmarks for train&ndash;test data leakage (identifying 44 leaked pairs) and curated leak-free evaluation splits over 5,089 unique binary tweets across MSA, Egyptian, Levantine, and Gulf Arabic.</li>
+              <li>Benchmarked 11 transformer encoders (MARBERTv2, AraBERTv02, CAMeLBERT) and 4 instruction-tuned 7&ndash;9B LLMs (Fanar-1-9B, Qwen2.5-7B) across pooled, LODO, and MSA-only transfer regimes over 5 seeds.</li>
+              <li>Demonstrated that variance-based indices (DRI) rank a majority baseline #1 of 79 systems, establishing level-aware HM-F1 and WD-F1 metrics alongside a NumPyro Bayesian beta-binomial mixed model (NUTS) and bootstrap evaluation suite.</li>
             </ul>
             <div class="card-tags">
-              <span class="tag">React</span>
-              <span class="tag">Node.js</span>
-              <span class="tag">TypeScript</span>
-              <span class="tag">PostgreSQL</span>
-              <span class="tag">Cloudflare R2</span>
-              <span class="tag">GitHub Actions</span>
+              <span class="tag">Arabic NLP</span>
+              <span class="tag">Cross-Dialect Robustness</span>
+              <span class="tag">MARBERTv2</span>
+              <span class="tag">LLMs</span>
+              <span class="tag">NumPyro Bayesian</span>
+              <span class="tag">Statistical Evaluation</span>
             </div>
             <div style="display: flex; gap: 10px; flex-wrap: wrap;">
-              <a href="https://middelmen.com" target="_blank" rel="noopener noreferrer" class="theme-btn" style="font-size: 0.85rem; padding: 6px 14px;">Visit Live Platform &nearr;</a>
-              <a href="projects.html" class="theme-btn theme-btn-secondary" style="font-size: 0.85rem; padding: 6px 14px;">All Projects &rarr;</a>
+              <a href="https://doi.org/10.5281/zenodo.24326845" target="_blank" rel="noopener noreferrer" class="theme-btn" style="font-size: 0.85rem; padding: 6px 14px;">Preprint (DOI) &nearr;</a>
+              <a href="https://github.com/Hamza-Nayab/arabic-dialect-robustness" target="_blank" rel="noopener noreferrer" class="theme-btn theme-btn-secondary" style="font-size: 0.85rem; padding: 6px 14px;">Code (GitHub) &nearr;</a>
+              <a href="research.html#arabic-sentiment" class="theme-btn theme-btn-secondary" style="font-size: 0.85rem; padding: 6px 14px;">View Technical Details &rarr;</a>
             </div>
           </article>
         </div>
