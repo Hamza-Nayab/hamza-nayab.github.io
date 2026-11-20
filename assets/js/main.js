@@ -135,26 +135,45 @@ function initContactForm() {
   if (!contactForm) return;
 
   contactForm.addEventListener('submit', (e) => {
-    // If form action is set to a live service (Formspree/EmailJS), allow normal submission or handle via fetch
-    const action = contactForm.getAttribute('action');
-    if (!action || action.includes('placeholder') || action === '#' || action === '/contact_form') {
-      e.preventDefault();
-      
-      const nameInput = document.getElementById('contact_name');
-      const name = nameInput ? nameInput.value.trim() : 'Friend';
+    e.preventDefault();
 
-      if (formFeedback) {
-        formFeedback.style.display = 'block';
-        formFeedback.style.color = '#15803d';
-        formFeedback.style.backgroundColor = '#f0fdf4';
-        formFeedback.style.border = '1px solid #bbf7d0';
-        formFeedback.style.padding = '12px 16px';
-        formFeedback.style.borderRadius = '4px';
-        formFeedback.style.marginTop = '16px';
-        formFeedback.innerHTML = `<strong>Thank you, ${name}!</strong> Your message has been sent successfully. I will get back to you soon.`;
-      }
-      contactForm.reset();
+    const nameInput = document.getElementById('contact_name');
+    const emailInput = document.getElementById('contact_email');
+    const subjectInput = document.getElementById('contact_subject');
+    const bodyInput = document.getElementById('contact_body');
+
+    const name = nameInput ? nameInput.value.trim() : '';
+    const email = emailInput ? emailInput.value.trim() : '';
+    const subject = subjectInput ? subjectInput.value.trim() : '';
+    const body = bodyInput ? bodyInput.value.trim() : '';
+
+    const whatsappNumber = '971557246461';
+    const messageParts = [
+      `*Inquiry from Portfolio Website*`,
+      ``,
+      `*Name:* ${name || 'N/A'}`,
+      `*Email:* ${email || 'N/A'}`,
+      `*Subject:* ${subject || 'General Inquiry'}`,
+      ``,
+      `*Message:*`,
+      `${body}`
+    ];
+    const messageText = messageParts.join('\n');
+    const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(messageText)}`;
+
+    if (formFeedback) {
+      formFeedback.style.display = 'block';
+      formFeedback.style.color = '#15803d';
+      formFeedback.style.backgroundColor = '#f0fdf4';
+      formFeedback.style.border = '1px solid #bbf7d0';
+      formFeedback.style.padding = '12px 16px';
+      formFeedback.style.borderRadius = '4px';
+      formFeedback.style.marginTop = '16px';
+      formFeedback.innerHTML = `<strong>Thank you, ${name || 'there'}!</strong> Redirecting to WhatsApp to send your message...<br><span style="font-size: 0.9em; display: inline-block; margin-top: 6px;">If WhatsApp did not open automatically, <a href="${whatsappUrl}" target="_blank" rel="noopener noreferrer" style="color: #1d4ed8; text-decoration: underline; font-weight: 600;">click here to open WhatsApp &nearr;</a></span>`;
     }
+
+    // Open WhatsApp in a new tab
+    window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
   });
 }
 

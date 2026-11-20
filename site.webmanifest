@@ -4,8 +4,8 @@
   "description": "CS Researcher in Machine Learning, Low-Resource NLP, Adaptive Sorting Algorithms, and Full-Stack Engineering.",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#fbfbf9",
-  "theme_color": "#0d5c58",
+  "background_color": "#ffffff",
+  "theme_color": "#0f172a",
   "icons": [
     {
       "src": "icon-192.png",
